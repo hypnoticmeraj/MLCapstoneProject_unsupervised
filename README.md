@@ -1,95 +1,124 @@
-# MLCapstoneProject_unsupervised
+# Netflix-Movies-and-TV-Shows-Clustering-
+This project is a part of "Unsupervised Machine Learning” curriculum as capstone projects at AlmaBetter School 
+I have clustered similar movies and TV Shows available on Netflix taking into account of attributes like Description, Cast, Director, Genre etc of a particular movie/show.
+💾 Project Files Description
 
-<p align="center"> 
-  <img src="img/download.png" alt="Netflix Logo" width="80px" height="80px">
-</p>
-<h1 align="center"> Netflix Movies and TV Shows Clustering </h1>
-<h3 align="center"> AlmaBetter Verfied Project - <a href="https://www.almabetter.com/"> AlmaBetter School </a> </h5>
+This Project includes 1 colab notebook, 1 technical documentation as well as 1 presentation:
+Executable Files:
 
-<p align="center"> 
-<img src="gif/netflix-netflix-logo.gif" alt="Animated gif" height="382px">
-</p>
+    NETFLIX MOVIES AND TV SHOWS CLUSTERING.ipynb - Includes all functions required for classification operations.
 
-<p>I have clustered similar movies and TV Shows available on Netflix taking into account of attributes like Description, Cast, Director, Genre etc of a particular movie/show.</p>
+Output:
 
-<h2> :floppy_disk: Project Files Description</h2>
+    Google Colab - All the outputs are visible in the provided colab notebook. 
 
-<p>This Project includes 1 ipynb notebook and 1 input CSV file:</p>
-<h4>IPython Notebook:</h4>
-<ul>
-  <li><b>TEAM_REALITY_NETFLIX_MOVIES_AND_TV_SHOWS_CLUSTERING.ipynb</b> - Final IPython Notebook with explanation of steps in markdown.</li>
-  
-</ul>
+Input Files:
 
-<h4>Input Files:</h4>
-<ul>
-  <li><b>NETFLIX MOVIES AND TV SHOWS CLUSTERING.csv</b> - Input dataset having information about different shows/movies available on Netflix.</li>
-  
-</ul>
+    NETFLIX MOVIES AND TV SHOWS CLUSTERING.csv - Input dataset having information about different shows/movies available on Netflix.
 
 
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
-<h2> :book: About the Project</h2>
+    
 
-<p>With the advent of streaming platforms, there’s no doubt that Netflix has become one of the important platforms for streaming. The dataset that we have used for EDA and clustering has been collected by Flixable, a third-party Netflix search engine. There are 12 features and around 7700 observations in the dataset and are mostly textual features.
+📖Introduction
+Netflix, the world’s largest on-demand internet streaming media and online DVD movie rental service provider.it Founded August 29, 1997, in Los Gatos, California by Marc and Reed. It has 69 million members in over 60 countries enjoying more than 100 million hours of TV shows and movies per day Netflix is the world’s leading internet entertainment service with enjoying TV series, documentaries, and feature films across a wide variety of genres and languages. I was curious to analyze the content released in Netflix platform which led me to create these simple, interactive, and exciting visualizations and find similar groups of people.
+📖 Problem Statement
+This dataset consists of tv shows and movies available on Netflix as of 2019. The dataset is collected from Flixable which is a third-party Netflix search engine.
+In 2018, they released an interesting report which shows that the number of TV shows on Netflix has nearly tripled since 2010. The streaming service’s number of movies has decreased by more than 2,000 titles since 2010, while its number of TV shows has nearly tripled. It will be interesting to explore what all other insights can be obtained from the same dataset.
 
-Through univariate and multivariate analysis, we found trends that will help in understanding what content is being consumed country-wise, depending on some categorical features like rating, type, genres, cast, directors, etc. Clustering was performed along with NLP on textual columns and then a mini-recommendation system was built out of it.
-</p>
+Attribute Information
 
-<h2> :book: Project Description</h2>
+    show_id : Unique ID for every Movie / Tv Show
 
-<p>In our project, Netflix Movies & TV Shows Clustering, we were able to analyse and perform an unsupervised Machine Learning Algorithm for the unlabelled datasets. The dataset we were provided with contains several columns and other numerical features. We were also asked two questions that could be answered from EDA.
+    type : Identifier - A Movie or TV Show
 
+    title : Title of the Movie / Tv Show
 
-The EDA was done extensively as we needed to derive good insights to support our claim and hypothesis. We were able to answer the two questions that followed along with the EDA, country-wise trend analysis on content and genre; and also to analyse if Netflix was focusing more on Shows rather than Movies.
+    director : Director of the Movie
 
+    cast : Actors involved in the movie / show
 
-After we performed EDA, both univariate and bivariate analysis, we have prepared our text columns by following basic text cleaning, stopwords removal, tokenisation and stemming. After the text columns were ready, we selected only features or words that were important using TF IDF Vectorisation and also reduced dimension. 
+    country : Country where the movie / show was produced
 
+    date_added : Date it was added on Netflix
 
-The prepared text columns were clustered after selecting an optimal value from elbow plots. Finally, we used K Means to cluster our dataset into 9 distinct clusters and we were also able to encode or label the dataset accordingly.
+    release_year : Actual Releaseyear of the movie / show
 
-Subsets of dataset formed from clustering were analysed and word clouds were plotted, after which we used interactive Plotly visualisation to represent the cluster. 
+    rating : TV Rating of the movie / show
 
-Finally, a simple recommendation system was also tried out, the future scopes for the projects were also identified. 
+    duration : Total Duration - in minutes or number of seasons
 
-</p>
+    listed_in : Genere
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
-
-<h2> :clipboard: Execution Instruction</h2>
-
-<p>The given IPython Notebook can be either downloaded to be run on your local Jupyter Notebook or can be directly run on Google Colab.</p>
-
-
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
-
-<!-- CREDITS -->
-<h2 id="credits"> :scroll: Credits</h2>
-
- Md Merajuddin
-
-<p> <i> Contact me for Data Science Project Collaborations</i></p>
+    description: The Summary description
 
 
-[![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nadeeha-salam/)
-[![GitHub Badge](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/nadeeha/)
-[![Medium Badge](https://img.shields.io/badge/Medium-1DA1F2?style=for-the-badge&logo=medium&logoColor=white)](https://nadeehasalam.medium.com/)
-[![Resume Badge](https://img.shields.io/badge/resume-0077B5?style=for-the-badge&logo=resume&logoColor=white)](https://drive.google.com/file/d/1r4EeJQC1L90OQMseyxWXhBiRyYT7Sdfb/view?usp=sharing)
+
+Integrating this dataset with other external datasets such as IMDB ratings, rotten tomatoes can also provide many interesting findings.
+
+📖 Data Summary
+Netflix is by far the most widely used media and video streaming service. It includes over 8000+ movies with tv shows worldwide. Currently, Netflix has more than 200 million subscribers worldwide. NETFLIX is also the most widely utilized entertainment platform worldwide. It offers a vast library of films and TV series that may be seen at any time through internet services.
+Netflix is without a doubt the most used media and video streaming service. There are more than 8000 films and television programmers included. At the moment, Netflix has over 200 million subscribers worldwide. Additionally, NETFLIX is the most widely used entertainment service worldwide. Through online services, it offers a vast library of movies and TV series that may be accessed at any time. 
+The tabular dataset includes listings for all Netflix movies and TV shows, together with information about the actors, directors, ratings, release year, duration, and other factors. It has 7787 rows and 12 columns.
+Our project's main objective is to build a model that can cluster similar data by matching text-based features.
+According to the problem statement, the question arises that, understanding what type of content is available in different countries and Is Netflix increasingly focused on TV rather than movies in recent years we have to do clustering on similar content by matching text-based features. For that we have used K-means Clustering.
+To obtain relevant data free of NAN values (null values), we will manipulate the raw data. We will next look at the dataset's summary statistics. With feature engineering, feature scaling, and the removal of unnecessary columns, we prepared a dataset. To use the model in the study, the data was transformed into a common scalar form.
+We executed the exploratory data analysis. Reviewing all the data processing then the model was trained to form Collections. In which we remark as below- k-means clustering model gave insights of silhouette analysis consisting of 2,3,4,5,6 clusters.
+      For n_clusters = 2 The average silhouette score is 0.42541313028836003
+  For n_clusters = 3 The average silhouette score is: 0.3940500353920696
+           For n_clusters = 4 The average silhouette score is: 0.38498095158183726
+             For n_clusters = 5 The average silhouette score is: 0.3962372504377786
+      For n_clusters = 6 The average silhouette score is: 0.392565886828632
+
+In the end, we plot boxplot to predict the hypothesis -
+•	After clustering, we can state that the number of TV series that have been released over the past few years is not increasing, which is our alternative hypothesis.
+•	Our second alternative hypothesis is the number of TV shows added to Netflix is high.
+We calculated that whereas movies make up 97.2 percent of the total, TV series only make up 2.8 percent. When compared to films made in the last 10 years, Netflix has added a lot more movies and TV episodes in the past years, but the numbers are still small. In many nations, people choose to watch movies over TV programming.
 
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
-<h2> :books: References</h2>
-<ul>
-  <li><p>realpython.com, 'K-Means Clustering in Python: A Practical Guide'. [Online].</p>
-      <p>Available: https://realpython.com/k-means-clustering-python/</p>
-  </li>
-  <li><p>towardsdatascience.com, 'Content strategy of Netflix in the recent years'. [Online].</p>
-      <p>Available: https://towardsdatascience.com/deciphering-netflixs-content-strategy-through-nlp-b59cd2e84873</p>
-  </li>
-  
-</ul>
+Dash Web App:
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+NetflixRecommender recommends Netflix movies and TV shows based on a user's favourite movie or TV show. It uses a Natural Language Processing (NLP) model and a K-Means Clustering model to make these recommendations. These models use information about movies and TV shows such as their plot descriptions and genres to make suggestions. The motivation behind this project is to develop a deeper understanding of recommender systems. Specifically, thinking about how companies like Netflix and YouTube create algorithms to tailor content based on user interests and behaviour. I created a Dash web app that utlizes my model to provide film recommendations based on a user's favourite movie or TV show.
+
+App
+Exploring Solutions:
+
+Having a deeper understanding of what problem we are trying to solve, what the users’ needs, and frustrations are, and what the goals are for achieving the best possible solution for both for the business as well as the user, I began by listing out the possible solutions that were arrived from the research.
+
+    Improve rating system: Use the star rating rather than a thumbs up and thumbs down rating system to help guide in decision making when selecting a film.
+    Separate recently watched: Hide the movies and TV-Shows on a separate page so users don’t have to scroll through those already seen. — users have to do more searching
+    Randomize a Movie: When users are unsure of what to choose, Netflix will randomly select something to watch based on their viewing history.
+    Show popular/trending films: Create a category which showcases only trending content.
+    Connect with Friends: It was proven that users watch shows and movies based on friend recommendations so this may be useful for keeping users locked into Netflix for longer.
+    Organizing films by the mood: Alongside the genres filter, it may be possible to organize content based on the mood that is experienced after watching the film.
+
+Steps involved:
+
+The full code for this article can be found here. It is implemented in Python and different clustering algorithms are used. Below is a brief description of the general approach that I employed:
+
+    Data cleaning and pre-processing: Here I checked and dealt with missing and duplicate variables from the data set as these can grossly affect the performance of different machine learning algorithms (many algorithms do not tolerate missing data).
+    Exploratory Data Analysis: Here I wanted to gain important statistical insights from the data and the things that I checked for were the distributions of the different attributes, correlations of the attributes with each other and the target variable and I calculated important odds and proportions for the categorical attributes.
+    Clustering: Clustering or cluster analysis is a machine learning technique, which groups the unlabelled dataset. It can be defined as "A way of grouping the data points into different clusters, consisting of similar data points. The objects with the possible similarities remain in a group that has less or no similarities with another group." It does it by finding some similar patterns in the unlabelled dataset such as shape, size, colour, behaviour, etc., and divides them as per the presence and absence of those similar patterns. It is an unsupervised learning method; hence no supervision is provided to the algorithm, and it deals with the unlabeled dataset. After applying this clustering technique, each cluster or group is provided with a cluster-ID. ML systems can use this id to simplify the processing of large and complex datasets.
+
+Conclusion
+
+In conclusion, tailored recommendations can be made based on information about movies and TV shows. In addition, similar models can be developed to provide valuable recommendations to consumers in other domains. It will solve for improved movie and TV-Show selection times with a considerable growth in satisfaction of the content being consumed leading to more user engagement and greater trust in Netflix recommendations.
+
+1.	Most films were released in the years 2018, 2019, and 2020.
+2.	TV shows account for 2.8 percent of the total, while movies account for 97.2 percent.
+3.	Dramas is a genre that is mostly watched on Netflix and as per audience preference international movies are mostly watched.
+4.	The largest count of Netflix content is made with a “TV-14” rating,
+5.	The United States, India, the United Kingdom, Canada, and Egypt are the top five producer countries.
+6.	Netflix has added a lot more movies and TV episodes in the previous years, but the numbers are still low when compared to movies released in the last ten years.
+7.	Movies are mostly watched in various countries rather than TV shows.
+8.	We performed data engineering to remove the unnecessary variables and to convert the data into standardized form into scalar.
+9.	Implemented model is based on the K-means clustering algorithm consisting of 2,3,4,5,6 clusters.
+Silhouette Analysis score for K-means :
+•	For n_clusters = 2, silhouette score Is 0.42541313028836003
+•	For n_clusters = 3, silhouette score is 0.3940500353920696
+•	For n clusters = 4, silhouette score is 0.38498095158183726
+•	For n_clusters = 5, silhouette score is 0.3962372504377786
+•	For n_clusters = 6, silhouette score is 0.3925658868286329
+11.	After clustering, we can say that our alternative hypothesis is that the number of TV shows launched in the previous few years is NOT growing.
+12.	Our second alternative hypothesis is the number of TV shows added to Netflix is higher.
